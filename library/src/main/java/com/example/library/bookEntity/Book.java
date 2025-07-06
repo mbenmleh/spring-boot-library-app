@@ -17,6 +17,7 @@ public class Book {
     private String titre;
     private String isbn;
     private String auteur;
+    private String category;
     private LocalDateTime createdAt = LocalDateTime.now();
 
     public Book() {
@@ -31,6 +32,10 @@ public class Book {
 
     public String getTitre() {
         return titre;
+    }
+
+    public String getCategory(){
+        return category;
     }
 
     public String getAuteur() {
@@ -52,6 +57,11 @@ public class Book {
     public void setTitre(String titre){
         this.titre = titre;
     }
+
+    public void setCategory(String category){
+        this.category = category;
+    }
+
     public void setAuteur(String auteur){
         this.auteur = auteur;
     }
